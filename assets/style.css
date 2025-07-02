@@ -1,15 +1,18 @@
+/* Base Theme Styles */
 body {
   background-color: #121212;
   color: #ffffff;
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
+
 body.light-theme {
-  background-color: #f2f2f2;
-  color: #000000;
+  background-color: #f7f7f7;
+  color: #111111;
 }
+
 header, footer {
   background-color: #1e1e1e;
   padding: 20px;
@@ -17,57 +20,101 @@ header, footer {
 }
 body.light-theme header,
 body.light-theme footer {
-  background-color: #e0e0e0;
+  background-color: #f0f0f0;
+}
+
+/* Profile image */
+img.profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  padding: 10px;
 }
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  justify-content: center;
-  gap: 15px;
-  padding: 10px;
+  padding: 0;
   margin: 0;
-  background-color: #222;
+}
+nav ul li {
+  margin: 0 10px;
 }
 nav ul li a {
   color: #00aaff;
   text-decoration: none;
+  font-weight: bold;
 }
 nav button {
-  margin-left: 10px;
-  padding: 5px 10px;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  margin-left: 15px;
+  cursor: pointer;
 }
+nav button:hover {
+  background-color: #008fcc;
+}
+
+/* Main Content */
 main {
   padding: 20px;
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
 }
 section {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
+
+/* Buttons */
 .button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 20px;
   background-color: #00aaff;
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
 }
-img.profile {
-  width: 150px;
-  border-radius: 50%;
-  margin-top: 10px;
+.button:hover {
+  background-color: #008ecc;
 }
+
+/* Project Cards */
 .card {
-  background-color: #1e1e1e;
+  background-color: #1f1f1f;
   padding: 15px;
-  margin: 10px 0;
-  border-left: 5px solid #00aaff;
-  border-radius: 8px;
+  margin: 15px 0;
+  border-left: 4px solid #00aaff;
+  border-radius: 6px;
 }
 body.light-theme .card {
-  background-color: #ffffff;
-  border-left: 5px solid #005577;
+  background-color: #fff;
+  border-left-color: #0077cc;
 }
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav button {
+    margin-top: 10px;
+  }
+}
+
 
 /* body {
   background-color: #121212;

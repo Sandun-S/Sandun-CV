@@ -1,119 +1,56 @@
-/* Base Theme Styles */
 body {
-  background-color: #121212;
-  color: #ffffff;
-  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #111;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  transition: all 0.3s ease;
-}
-
-body.light-theme {
-  background-color: #f7f7f7;
-  color: #111111;
 }
 
 header, footer {
-  background-color: #1e1e1e;
-  padding: 20px;
-  text-align: center;
-}
-body.light-theme header,
-body.light-theme footer {
-  background-color: #f0f0f0;
-}
-
-/* Profile image */
-img.profile {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-top: 10px;
-}
-
-/* Navigation */
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background-color: #222;
-  padding: 10px;
-}
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-nav ul li {
-  margin: 0 10px;
-}
-nav ul li a {
-  color: #00aaff;
-  text-decoration: none;
-  font-weight: bold;
-}
-nav button {
-  background-color: #00aaff;
+  background-color: #007acc;
   color: white;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 4px;
-  margin-left: 15px;
-  cursor: pointer;
-}
-nav button:hover {
-  background-color: #008fcc;
+  text-align: center;
+  padding: 20px;
 }
 
-/* Main Content */
+header a, footer a {
+  color: #ffe;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
 main {
   padding: 20px;
   max-width: 900px;
   margin: auto;
 }
-section {
-  margin-bottom: 50px;
+
+h1, h2, h3 {
+  color: #007acc;
 }
 
-/* Buttons */
+.profile {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
 .button {
   display: inline-block;
-  padding: 12px 20px;
-  background-color: #00aaff;
-  color: #fff;
+  padding: 10px 15px;
+  background-color: #007acc;
+  color: white;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 5px;
 }
 .button:hover {
-  background-color: #008ecc;
+  background-color: #005fa3;
 }
 
-/* Project Cards */
-.card {
-  background-color: #1f1f1f;
-  padding: 15px;
-  margin: 15px 0;
-  border-left: 4px solid #00aaff;
-  border-radius: 6px;
-}
-body.light-theme .card {
-  background-color: #fff;
-  border-left-color: #0077cc;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  nav button {
-    margin-top: 10px;
-  }
-}
 
 
 /* body {

@@ -4,6 +4,77 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
+  transition: all 0.3s;
+}
+body.light-theme {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+header, footer {
+  background-color: #1e1e1e;
+  padding: 20px;
+  text-align: center;
+}
+body.light-theme header,
+body.light-theme footer {
+  background-color: #e0e0e0;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+  margin: 0;
+  background-color: #222;
+}
+nav ul li a {
+  color: #00aaff;
+  text-decoration: none;
+}
+nav button {
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+section {
+  margin-bottom: 40px;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00aaff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+img.profile {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.card {
+  background-color: #1e1e1e;
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 5px solid #00aaff;
+  border-radius: 8px;
+}
+body.light-theme .card {
+  background-color: #ffffff;
+  border-left: 5px solid #005577;
+}
+
+/* body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 header, footer {
   background-color: #1e1e1e;
@@ -34,3 +105,4 @@ img.profile {
   border-radius: 50%;
   margin-top: 10px;
 }
+ */

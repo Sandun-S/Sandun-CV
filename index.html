@@ -2,6 +2,126 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandun Siwantha | CV Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Sandun Siwantha</h1>
+    <p>Associate Electronic Engineer</p>
+    <img src="assets/profile.jpg" alt="Profile Picture" class="profile">
+    <p>
+      <a href="mailto:hakssiwantha@gmail.com">Email</a> |
+      <a href="https://linkedin.com/in/sandun-siwantha">LinkedIn</a> |
+      <a href="https://github.com/Sandun-S">GitHub</a> |
+      <a href="https://syntaxcolors.blogspot.com/">Blog</a>
+    </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#download">Download CV</a></li>
+    </ul>
+    <button onclick="toggleTheme()">Toggle Dark/Light</button>
+  </nav>
+
+  <main>
+    <section id="about" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>I am passionate about building real-world electronics and AI systems. I work with ESP32, STM32, Raspberry Pi, and enjoy solving industry problems with embedded hardware and smart software.</p>
+    </section>
+
+    <section id="skills" data-aos="fade-up">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming: Python, C, C++, Java</li>
+        <li>Platforms: ESP32, STM32, Arduino, Raspberry Pi</li>
+        <li>Tools: PlatformIO, FreeRTOS, Altium, EasyEDA, MATLAB</li>
+        <li>AI/ML: YOLO, Tesseract, OpenCV, PyTorch, Scikit-learn</li>
+        <li>Soft: Teamwork, Leadership, Problem-Solving</li>
+      </ul>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>PIN-based Door Lock</h3>
+        <p>Arduino-secured access system using keypad & relay.</p>
+      </div>
+      <div class="card">
+        <h3>To-Do App (Android)</h3>
+        <p>Kotlin + SQL-based mobile app with intuitive task UI.</p>
+      </div>
+      <div class="card">
+        <h3>Edusite Lanka</h3>
+        <p>Dynamic education site with HTML, CSS, PHP, JS, SQL.</p>
+        <a href="https://github.com/Sandun-S">GitHub Repo</a>
+      </div>
+      <div class="card">
+        <h3>Event Management System</h3>
+        <p>University event organizer tool built with Figma + Java + MySQL.</p>
+      </div>
+      <div class="card">
+        <h3>Centrifuge System</h3>
+        <p>Designed for physics-based separation of mixtures using motor control.</p>
+      </div>
+    </section>
+
+    <section id="experience" data-aos="fade-up">
+      <h2>Experience</h2>
+      <h3>Associate Electronic Engineer – RCS2 Technologies (2024–Present)</h3>
+      <ul>
+        <li>Designed PCBs, debugged systems, integrated BLE/Wi-Fi/LoRa</li>
+        <li>Created documentation and tested real-world hardware</li>
+      </ul>
+      <h3>Trainee - R&D Engineer – RCS2 Technologies</h3>
+      <ul>
+        <li>Developed firmware (ESP32/STM32/Arduino), YOLO training, OCR GUI</li>
+        <li>Used Flask, FreeRTOS, and multiple communication protocols</li>
+      </ul>
+    </section>
+
+    <section id="certificates" data-aos="fade-up">
+      <h2>Certificates</h2>
+      <ul>
+        <li>CCNA & CCENT – Great Lake Holding</li>
+        <li>Python for Beginners – University of Moratuwa</li>
+        <li>FPGA Embedded System – ACCIMT</li>
+        <li>Diplomas in IT & English – ESOFT</li>
+      </ul>
+    </section>
+
+    <section id="download" data-aos="fade-up">
+      <h2>Download CV</h2>
+      <a href="assets/Sandun_CV.pdf" class="button" download>📄 Download My Full CV</a>
+    </section>
+
+    <footer>
+      <p>© 2025 Sandun Siwantha</p>
+    </footer>
+  </main>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("light-theme");
+    }
+  </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <title>Sandun Siwantha | Portfolio CV</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -35,3 +155,4 @@
   </main>
 </body>
 </html>
+ -->

@@ -111,10 +111,18 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
   <script>
-    function toggleTheme() {
-      document.body.classList.toggle("light-theme");
-    }
-  </script>
+  const body = document.body;
+  const theme = localStorage.getItem("theme");
+
+  if (theme === "light") {
+    body.classList.add("light-theme");
+  }
+
+  function toggleTheme() {
+    body.classList.toggle("light-theme");
+    localStorage.setItem("theme", body.classList.contains("light-theme") ? "light" : "dark");
+  }
+</script>
 </body>
 </html>
 
